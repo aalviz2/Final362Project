@@ -38,31 +38,31 @@ void loop(){
     // if it is, the buttonState is LOW:
   
 
-	//button 1
+	//button 4
     if (buttonState == LOW && buttonPin[x] == 10) {
       // turn LED on:
-      Serial.print("BTN 1 ON *");
+      Serial.println("BTN 4 ON *");
       digitalWrite(ledPin, HIGH);
     }
 
-  	//button 2
+  	//button 3
     if (buttonState == LOW && buttonPin[x] == 9) {    
       // turn LED off:   
-      Serial.print("BTN 2 OFF * ");
+      Serial.println("BTN 3 OFF * ");
       digitalWrite(ledPin, LOW); 
     }
 
-	//button 3
+	//button 1
     if (buttonState == LOW && buttonPin[x] == 12) {    
       // turn LED off:   
-      Serial.print("BTN 3 ON * ");
+      Serial.println("BTN 1 ON * ");
       digitalWrite(ledPin, HIGH); 
     }
 	
-	//button 4
+	//button 2
     if (buttonState == LOW && buttonPin[x] == 11) {    
       // turn LED off:   
-      Serial.print("BTN 4 OFF * ");
+      Serial.println("BTN 2 OFF * ");
       digitalWrite(ledPin, LOW); 
     }
 
